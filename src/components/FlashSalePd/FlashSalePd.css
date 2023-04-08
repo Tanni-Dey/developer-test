@@ -1,0 +1,232 @@
+.tittlebar {
+  margin-bottom: 17px;
+}
+.tittlebar h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.6;
+  color: #17201d;
+  padding: 14px 15px;
+  border: 2px solid #17201d;
+  display: inline-block;
+}
+
+.single_product {
+  border: 1px solid #f2f2f2;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.product_type {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #db2f06;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 8px;
+  background: #fae8e4;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+.single_product_info {
+  margin: 0 20px 20px 20px;
+}
+.pd_cat {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #8b928f;
+  margin: 30px 0 8px 10px;
+}
+.pd_tittle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #17201d;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.rating {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.rate {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #8b928f;
+  margin-left: 6px;
+}
+.price {
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+.new_price {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+  color: #5b9982;
+  margin-right: 3px;
+}
+.old_price {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  text-decoration-line: line-through;
+  color: #a3a9a7;
+}
+.single_product:hover .icon_part {
+  display: flex;
+}
+.icon_part {
+  position: absolute;
+  width: 100%;
+  bottom: 85px;
+  left: 12px;
+  background-color: white;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  display: none;
+}
+.icon_part div {
+  position: relative;
+}
+.icon_part div::after {
+  /* border-right: 1px solid red;   */
+  content: "";
+  position: absolute;
+  top: 50%;
+  translate: -50% -50%;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #ebebeb;
+}
+.icon_part div:last-child::after {
+  display: none;
+}
+
+.icon_part img {
+  /* text-align: center; */
+  padding: 15px;
+  margin: 15px 21px 15px 21px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.icon_part img:hover {
+  background-color: #c1c6c4;
+}
+
+.btn_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-right: 10px;
+}
+.add_btn {
+  display: block;
+  width: 100%;
+  background: #eaf6f0;
+  border-radius: 4px;
+  border: none;
+  color: #5b9982;
+  transition: 0.2s;
+}
+.add_btn:hover {
+  background: #5b9982;
+  color: white;
+}
+/* ---------------------------------------------- */
+.single_product:hover .main_img {
+  opacity: 0;
+}
+.single_product:hover .carousel {
+  opacity: 1;
+}
+.main_img {
+  opacity: 1;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.carousel {
+  opacity: 0;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  /* position: relative; */
+}
+
+.image-container img {
+  position: absolute;
+  top: -130px;
+  left: 40px;
+  opacity: 0;
+  max-width: 70%;
+  transition: opacity 0.5s ease-in-out;
+  background-color: white;
+}
+
+.image-container img.active {
+  opacity: 1;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot-container span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dot-container span.active {
+  background-color: #333;
+}
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100px;
+}
+.prev-arrow {
+  left: 10px;
+}
+.next-arrow {
+  right: 10px;
+}
+
+.ad-img {
+  height: 100%;
+}
