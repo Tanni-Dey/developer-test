@@ -1,0 +1,36 @@
+.trending_product {
+  padding: 50px 0;
+  background-color: #fafafa;
+}
+.trending_tittlebar {
+  margin-bottom: 32px;
+}
+.cat_single_product {
+  background-color: white;
+  padding: 30px 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.pd_type_div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.pd_type_div .product_type {
+  margin-left: 0px;
+}
+
+.catagory_single h2 {
+  margin-bottom: 28px;
+}
+
+.catagory_single button {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 17px auto;
+}

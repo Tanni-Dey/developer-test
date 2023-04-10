@@ -5,7 +5,9 @@
   /* text-align: center; */
   margin-top: 100px;
 }
-
+.custom_container {
+  margin: 0 60px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

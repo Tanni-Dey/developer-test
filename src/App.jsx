@@ -6,10 +6,8 @@ import TrendingPd from "./components/TrendingPd/TrendingPd";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <FlashSalePd />
-        <TrendingPd />
-      </div>
+      <FlashSalePd />
+      <TrendingPd />
     </div>
   );
 }
